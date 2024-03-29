@@ -1,16 +1,28 @@
-import React,{useState} from 'react'
-import Home from './Home'
-import About from './About'
-import card from './card'
-import contact from './contact'
-function App() {
+import React from 'react'
+import Navbar from './Components/Navbar/Navbar'
+import Hero from './Components/Hero/Hero'
+import Programs from './Components/Programs/Programs'
+import Title from './Components/Title/Title'
+import About from './Components/About/About'
+import Campus from './Components/Campus/Campus'
+
+
+const App = () => {
   return (
-    <Home/>
-    <About/>
-    <card/>
-    <contact/>
-  );
+    <div>
+      <Navbar/>
+      <Hero/>
+      
+      <div className="container">
+        <Title subTitle='Our PROGRAM' title='What We Offer'/>
+        <Programs/>
+        <About/>
+        <Title subTitle='Gallery' title='Campus Photos' />
+        <Campus/>
+        
+      </div>
+    </div>
+  )
 }
 
-export default App;
-
+export default App

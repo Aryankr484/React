@@ -1,0 +1,33 @@
+.programs{
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.program img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+.program{
+    flex-basis: 31%;
+}
+.caption{
+    border-radius:10px ;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background:rgba(0,15,152,0.3) ;
+    display: flex;
+    align-items: center;
+}
+.caption img{
+    width: 100px;
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
